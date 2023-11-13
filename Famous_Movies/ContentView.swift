@@ -29,7 +29,7 @@ struct ContentView_Previews: PreviewProvider {
 class observer : ObservableObject{
     @Published var movie_list = [datatype2]()
     init() {
-let url = "https://api.themoviedb.org/3/movie/popular?api_key=ddd4550b762b2511c91f4d584875f129&language=en-US&page=1"
+let url = "https://api.themoviedb.org/3/movie/popular?api_key=placeholder&language=en-US&page=1"
         let session = URLSession(configuration: .default)
         session.dataTask(with: URL(string: url)!) {
             (data, _,_) in
